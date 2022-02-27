@@ -44,7 +44,7 @@ export default function App() {
 
         </View>
       </View> 
-      {/** Write a task */}
+      {/** Write a task */ }
         <KeyboardAvoidingView 
         behavior={Platform.OS === 'ios' ? "padding" : "height"}
         style={styles.writeTaskWrapper}
@@ -52,7 +52,7 @@ export default function App() {
           <TextInput 
             style={styles.input}
             placeholder={'Write a task'}
-            value={task}  //Now you'll see the real-time changes
+            value={task}   //Now you'll see the real-time changes
             onChangeText={ text => setTask(text)}
           />
           <TouchableOpacity onPress={ () => handleAddTask() }>
